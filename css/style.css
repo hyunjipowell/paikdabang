@@ -170,10 +170,10 @@ header nav .head__menu .head__menu-sub {
   color: #f1ae1d;
 }
 .contents .coffee {
-  background: url(../images/coffee.jpg) no-repeat center center fixed;
-  height: 500px;
-  background-size: cover;
   position: relative;
+  height: 500px;
+  background: url(../images/coffee.jpg) no-repeat center center fixed;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -197,4 +197,21 @@ header nav .head__menu .head__menu-sub {
   font-size: 17px;
   font-weight: 700;
   color: #6b4d30;
+}
+.contents .info .info__store {
+  border: 2px solid #0e347e;
+  height: 350px;
+}
+.contents .info .info__store div {
+  padding: 50px 0 0 30px;
+}
+.contents .info .info__store div h3 {
+  font-size: 40px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  color: #0e347e;
+}
+.contents .info .info__store div p {
+  font-size: 17px;
+  font-weight: 700;
 }

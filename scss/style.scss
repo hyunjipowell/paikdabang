@@ -20,28 +20,49 @@ $mini: 370px;
 
 @mixin drink($title, $sub-title) {
   background-size: cover;
- div{
-      padding: 60px 0 40px 50px;
-      h3 {
-            padding-bottom: 15px;
-            a {
-              font:{
-                  size: 50px;
-                  weight: 700;
-                  family: "Montserrat", sans-serif;
-              }
-              color: $title;
-            }
-          }
-          span {
-            a {
-              font-size: 17px;
-              font-weight: 700;
-              color: $sub-title;
-            }
-          }
- }
-  
+  div {
+    padding: 60px 0 40px 50px;
+    h3 {
+      padding-bottom: 15px;
+      a {
+        font: {
+          size: 50px;
+          weight: 700;
+          family: "Montserrat", sans-serif;
+        }
+        color: $title;
+      }
+    }
+    span {
+      a {
+        font-size: 17px;
+        font-weight: 700;
+        color: $sub-title;
+      }
+    }
+  }
+}
+
+@mixin info {
+  border: 2px solid $sub-color;
+  height: 350px;
+  div{
+
+      padding: 50px 0 0 30px;
+  h3 {
+    font: {
+      size: 40px;
+      weight: 700;
+      family: "Montserrat", sans-serif;
+}
+color: $sub-color;
+  }
+  p {
+      font-size: 17px;
+      font-weight: 700;
+      
+  }
+}
 }
 
 //   header
@@ -99,17 +120,23 @@ header {
       @include drink(#ffae00, #f1ae1d);
     }
   }
-  .coffee{
-        background:url(../images/coffee.jpg) no-repeat center center fixed;
-  
-        height: 500px;
-        background-size: cover;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        .coffee__box{
+  .coffee {
+    position: relative;
+    height: 500px;
+    background: url(../images/coffee.jpg) no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .coffee__box {
       @include drink(#503214, #6b4d30);
-        }
+    }
+  }
+  .info {
+    .info__store {
+   
+        @include info();
+      
+    }
   }
 }
