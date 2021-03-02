@@ -13,46 +13,103 @@ $mini: 370px;
 
 //반응형
 @mixin media($size) {
-      @media screen and (max-width: $size) {
-            @content;
-      }
+  @media screen and (max-width: $size) {
+    @content;
+  }
+}
+
+@mixin drink($title, $sub-title) {
+  background-size: cover;
+ div{
+      padding: 60px 0 40px 50px;
+      h3 {
+            padding-bottom: 15px;
+            a {
+              font:{
+                  size: 50px;
+                  weight: 700;
+                  family: "Montserrat", sans-serif;
+              }
+              color: $title;
+            }
+          }
+          span {
+            a {
+              font-size: 17px;
+              font-weight: 700;
+              color: $sub-title;
+            }
+          }
+ }
+  
 }
 
 //   header
 header {
-      border-top: 5px solid $sub-color;
-      .logo {
-            a {
-                  img {
-                        width: 194px;
-                  }
-            }
+  border-top: 5px solid $sub-color;
+  .logo {
+    a {
+      img {
+        width: 194px;
       }
-      .head__gnb{
-            li{
-                  a{
-                        font-size: 13px;
-                        color: #808080;
-                  }
-            }
-            &:after{
-                  content: '';
-                  width: 2px;
-                  height: 2px;
-                  background:  #808080;
-                  position: absolute;
-                  top: 32px;
-                  left: 80px;
-            }
+    }
+  }
+  .head__gnb {
+    li {
+      a {
+        font-size: 13px;
+        color: #808080;
       }
+    }
+    &:after {
+      content: "";
+      width: 2px;
+      height: 2px;
+      background: #808080;
+      position: absolute;
+      top: 32px;
+      left: 80px;
+    }
+  }
 
-      nav{
-            .head__menu{
-                  font-size: 17px;
-                  font-weight: bold;
-                  .head__menu-sub{
-                        display: none;
-                  }
-            }
+  nav {
+    .head__menu {
+      font-size: 17px;
+      font-weight: bold;
+      .head__menu-sub {
+        display: none;
       }
+    }
+  }
+}
+
+.contents {
+  .drink {
+    height: 550px;
+    .drink__box {
+      width: 50%;
+      background-color: skyblue;
+    }
+    .drink1 {
+      background: url(../images/main_sec3.jpg) no-repeat 100% center;
+      @include drink(#5b6327, #798434);
+    }
+    .drink2 {
+      background: url(../images/main_sec4.jpg) no-repeat center center;
+      @include drink(#ffae00, #f1ae1d);
+    }
+  }
+  .coffee{
+        background:url(../images/coffee.jpg) no-repeat center center fixed;
+  
+        height: 500px;
+        background-size: cover;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .coffee__box{
+      @include drink(#503214, #6b4d30);
+        }
+  }
 }

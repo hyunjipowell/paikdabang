@@ -119,3 +119,82 @@ header nav .head__menu {
 header nav .head__menu .head__menu-sub {
   display: none;
 }
+
+.contents .drink {
+  height: 550px;
+}
+.contents .drink .drink__box {
+  width: 50%;
+  background-color: skyblue;
+}
+.contents .drink .drink1 {
+  background: url(../images/main_sec3.jpg) no-repeat 100% center;
+  background-size: cover;
+}
+.contents .drink .drink1 div {
+  padding: 60px 0 40px 50px;
+}
+.contents .drink .drink1 div h3 {
+  padding-bottom: 15px;
+}
+.contents .drink .drink1 div h3 a {
+  font-size: 50px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  color: #5b6327;
+}
+.contents .drink .drink1 div span a {
+  font-size: 17px;
+  font-weight: 700;
+  color: #798434;
+}
+.contents .drink .drink2 {
+  background: url(../images/main_sec4.jpg) no-repeat center center;
+  background-size: cover;
+}
+.contents .drink .drink2 div {
+  padding: 60px 0 40px 50px;
+}
+.contents .drink .drink2 div h3 {
+  padding-bottom: 15px;
+}
+.contents .drink .drink2 div h3 a {
+  font-size: 50px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  color: #ffae00;
+}
+.contents .drink .drink2 div span a {
+  font-size: 17px;
+  font-weight: 700;
+  color: #f1ae1d;
+}
+.contents .coffee {
+  background: url(../images/coffee.jpg) no-repeat center center fixed;
+  height: 500px;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contents .coffee .coffee__box {
+  background-size: cover;
+}
+.contents .coffee .coffee__box div {
+  padding: 60px 0 40px 50px;
+}
+.contents .coffee .coffee__box div h3 {
+  padding-bottom: 15px;
+}
+.contents .coffee .coffee__box div h3 a {
+  font-size: 50px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  color: #503214;
+}
+.contents .coffee .coffee__box div span a {
+  font-size: 17px;
+  font-weight: 700;
+  color: #6b4d30;
+}
