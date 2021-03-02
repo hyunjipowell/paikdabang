@@ -1,0 +1,121 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul, li {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html,
+body {
+  font-family: "NanumSquare", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  font-family: "NanumSquare", sans-serif;
+}
+
+img {
+  vertical-align: middle;
+  border: 0;
+}
+
+button,
+label {
+  cursor: pointer;
+}
+
+button {
+  background-color: unset;
+}
+
+.blind {
+  position: absolute;
+  top: -99999px;
+}
+
+.clearFix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+address,
+em,
+i {
+  font-style: normal;
+}
+
+/* 반응형 사이즈 */
+header {
+  border-top: 5px solid #0e347e;
+}
+header .logo a img {
+  width: 194px;
+}
+header .head__gnb li a {
+  font-size: 13px;
+  color: #808080;
+}
+header .head__gnb:after {
+  content: "";
+  width: 2px;
+  height: 2px;
+  background: #808080;
+  position: absolute;
+  top: 32px;
+  left: 80px;
+}
+header nav .head__menu {
+  font-size: 17px;
+  font-weight: bold;
+}
+header nav .head__menu .head__menu-sub {
+  display: none;
+}

@@ -1,0 +1,58 @@
+@import "common";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+// font-family: 'Montserrat', sans-serif (700);
+$white: #fff;
+$black: #111;
+$main-color: #ffe600;
+$sub-color: #0e347e;
+
+/* 반응형 사이즈 */
+$pc-small: 1200px;
+$mobile: 767px;
+$mini: 370px;
+
+//반응형
+@mixin media($size) {
+      @media screen and (max-width: $size) {
+            @content;
+      }
+}
+
+//   header
+header {
+      border-top: 5px solid $sub-color;
+      .logo {
+            a {
+                  img {
+                        width: 194px;
+                  }
+            }
+      }
+      .head__gnb{
+            li{
+                  a{
+                        font-size: 13px;
+                        color: #808080;
+                  }
+            }
+            &:after{
+                  content: '';
+                  width: 2px;
+                  height: 2px;
+                  background:  #808080;
+                  position: absolute;
+                  top: 32px;
+                  left: 80px;
+            }
+      }
+
+      nav{
+            .head__menu{
+                  font-size: 17px;
+                  font-weight: bold;
+                  .head__menu-sub{
+                        display: none;
+                  }
+            }
+      }
+}
