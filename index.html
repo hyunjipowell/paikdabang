@@ -189,7 +189,7 @@
                 <p class="card-body"><a href="#">카페모카</a></p>
               </div>
             </div>
-          </div>
+         
           <div class="recomend__list list2 card-group">
             <div class="card">
               <a href="#"><img src="images/list2_1.jpg" alt="" /></a>
@@ -272,6 +272,7 @@
               <p><a href="#">피스타치오 빽스치노(SOFT)</a></p>
             </div>
           </div>
+        </div>
         </section>
         <section class="drink d-flex">
           <h2 class="blind">VARIOUS BEVERAGE, TASTY ICE CREAM / DESSERT</h2>
@@ -308,44 +309,49 @@
           </div>
         </section>
   
-        <section class="info row container">
+        <section class="info container">
           <h2 class="blind">매장찾기, 창업안내</h2>
-  
-          <div class="info__store col-6">
-            <div class="info__box">
-              <h3 class="h2">STORE</h3>
-              <p>원하시는 지역의 매장을 검색해 보세요!</p>
-              <form class="store-search">
-                <input type="search" />
-                <img src="" alt="" />
-              </form>
-            </div>
-          </div>
-          <div class="info__store col-6">
+  <div class="row">
 
-            <div class="info__box">
-              <h3 class="h2">FRANCHISE</h3>
-              <p>빽다방 창업안내를 도와드리겠습니다.</p>
-            </div>
-            <div class="info-btn"><img src="" alt="" /></div>
-          </div>
+    <div class="info__store col-6">
+      <div class="info__box">
+        <h3 class="h2">STORE</h3>
+        <p>원하시는 지역의 매장을 검색해 보세요!</p>
+        <form class="store-search">
+          <input type="search" placeholder="Find a store in your area"/>
+          <p>
+            <img src="images/search-white.svg" alt="" />
+          </p>
+        </form>
+      </div>
+    </div>
+    <div class="info__store col-6 info-bg">
+      <div class="info__box">
+        <h3 class="h2">FRANCHISE</h3>
+        <p>빽다방 창업안내를 도와드리겠습니다.</p>
+      </div>
+      <div class="info-btn"><img src="" alt="" /></div>
+    </div>
+  </div>
         </section>
-        <section class="sns text-center">
+        <section class="sns text-center container">
           <h2 class="blind">sns</h2>
-          <div class="center">
+          
             <div class="sns__box">
-              <h3>PAIK’S COFFEE SNS</h3>
-              <span>#빽다방 #빽다방신메뉴 #빽다방이벤트</span>
-              <ul class="sns__icon">
-                <li class="list-inline-item">
-                  <a href="#"><img src="images/facebook-ico.png" alt="" /></a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#"><img src="images/insta-ico.png" alt="" /></a>
-                </li>
-              </ul>
+              <h3 class="h2">PAIK’S COFFEE SNS</h3>
+              <a href="#">#빽다방</a>
+              <a href="#">#빽다방신메뉴</a>
+              <a href="#">#빽다방이벤트</a>
             </div>
-          </div>
+            <ul class="sns__icon text-center">
+              <li class="list-inline-item">
+                <a href="#"><img src="images/facebook-ico.png" alt="" /></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><img src="images/insta-ico.png" alt="" /></a>
+              </li>
+            </ul>
+        
         </section>
       </div>
      
@@ -359,20 +365,20 @@
             <a href="#"><img src="images/flogo-2.png" alt="" /></a>
           </div>
           <div class="foot__text">
-            <p>(주)더본코리아 사업자등록번호 211-86-00870 대표이사 백종원</p>
+            <p>(주)더본코리아 사업자등록번호 211-86-00870 <span>대표이사 백종원</span></p>
             <p>
-              주소: 서울시 강남구 봉은사로 1길 39 유성빌딩 5~6층 팩스:
-              02-511-3864
+              주소: 서울시 강남구 봉은사로 1길 39 유성빌딩 5~6층 <span>팩스:
+              02-511-3864</span>
             </p>
             <p>
-              본사 대표전화: 02-549-3864 가맹상담전화: 02-3447-0410 고객센터:
-              1544-2360
+              본사 대표전화: 02-549-3864 <span>가맹상담전화: 02-3447-0410</span> <span>고객센터:
+              1544-2360</span>
             </p>
           </div>
-          <div class="foot__family">
-            <ul>
-              <a href="#">패밀리사이트 바로가기</a>
-              <li><a href="#">더본코리아 공식홈페이지</a></li>
+          <ul class="foot__family  ">
+            <li class="foot__family-btn"><a href="#void">패밀리사이트</a>
+              <ul class="foot__family-sub text-center">
+                <li><a href="#">더본코리아 공식홈페이지</a></li>
               <li><a href="#">새마을식당</a></li>
               <li><a href="#">원조쌈밥집</a></li>
               <li><a href="#">홍콩반점</a></li>
@@ -381,12 +387,13 @@
               <li><a href="#">백철판</a></li>
               <li><a href="#">백스비어</a></li>
               <li><a href="#">역전우동</a></li>
-            </ul>
-          </div>
+              </ul>
+            </li>
+          </ul>
         </div>
       </div>
     </footer>
-    <aside>
+    <aside class="d-none">
       <div class="goTop">
         <i class="fas fa-caret-up fa-lg"></i>
         <p>TOP</p>
