@@ -97,17 +97,35 @@ header {
       font-weight: bold;
       .head__menu-sub {
         display: none;
+        li{
+          a{
+            color: #9a9a9a;
+
+          }
+        }
       }
     }
   }
 }
 
+// container
 .contents {
   .recomend__box{
+    .recomend__list{
+
+    
     img{
       width: 100%;
     }
+    
+      .card{
+        border: unset;
+      }
+    }
   }
+
+
+
   .drink {
     height: 550px;
     .drink__box {
@@ -218,10 +236,10 @@ footer{
   .foot__text{
     letter-spacing: 1px;
     text-align: center;
-    font-size: 17px;
+    font-size: 16px;
     font-family: 'Montserrat';
     p{
-      margin: 10px;
+      line-height: 1.5;
       span{
         padding-left: 10px;
       }
@@ -230,13 +248,12 @@ footer{
   .foot__family{
     border: 1px solid $white;
     width: 185px;
-    height: 50px;
+    height: 40px;
     position: relative;
     padding: 10px;
     margin-top: 20px;
     
     li{
-      padding:7px 0;
       a{
         
         color: $white;
@@ -244,7 +261,6 @@ footer{
       }
     }
     .foot__family-btn{
- 
       background-image: url(../images/up-arrow.svg);
       background-position: 95% 50%;
             background-repeat: no-repeat;
@@ -255,7 +271,10 @@ footer{
       border: 1px solid;
       width: 185px;
       right: -1px;
-      bottom: 48px;
+      bottom: 38px;
+      li{
+        line-height: 2;
+      }
     }
   }
 }

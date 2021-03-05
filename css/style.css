@@ -137,9 +137,15 @@ header nav .head__menu {
 header nav .head__menu .head__menu-sub {
   display: none;
 }
+header nav .head__menu .head__menu-sub li a {
+  color: #9a9a9a;
+}
 
-.contents .recomend__box img {
+.contents .recomend__box .recomend__list img {
   width: 100%;
+}
+.contents .recomend__box .recomend__list .card {
+  border: unset;
 }
 .contents .drink {
   height: 550px;
@@ -289,11 +295,11 @@ footer .foot__box .foot__logo img {
 footer .foot__box .foot__text {
   letter-spacing: 1px;
   text-align: center;
-  font-size: 17px;
+  font-size: 16px;
   font-family: "Montserrat";
 }
 footer .foot__box .foot__text p {
-  margin: 10px;
+  line-height: 1.5;
 }
 footer .foot__box .foot__text p span {
   padding-left: 10px;
@@ -301,13 +307,10 @@ footer .foot__box .foot__text p span {
 footer .foot__box .foot__family {
   border: 1px solid #fff;
   width: 185px;
-  height: 50px;
+  height: 40px;
   position: relative;
   padding: 10px;
   margin-top: 20px;
-}
-footer .foot__box .foot__family li {
-  padding: 7px 0;
 }
 footer .foot__box .foot__family li a {
   color: #fff;
@@ -324,5 +327,8 @@ footer .foot__box .foot__family .foot__family-sub {
   border: 1px solid;
   width: 185px;
   right: -1px;
-  bottom: 48px;
+  bottom: 38px;
+}
+footer .foot__box .foot__family .foot__family-sub li {
+  line-height: 2;
 }
