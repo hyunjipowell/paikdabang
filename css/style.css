@@ -141,6 +141,41 @@ header nav .head__menu .head__menu-sub li a {
   color: #9a9a9a;
 }
 
+.visual .main #mainBanner .carousel-indicators li {
+  border: 2px solid #fff;
+  background-color: unset;
+  border-radius: 50%;
+  background-clip: unset;
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+  opacity: 0.8;
+}
+.visual .main #mainBanner .carousel-indicators .active {
+  background-color: #fff;
+  opacity: 1;
+}
+.visual .main .contents .recommend__text-sub li {
+  position: relative;
+  margin-left: 15px;
+}
+.visual .main .contents .recommend__text-sub li a {
+  color: #ccc;
+}
+.visual .main .contents .recommend__text-sub li:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 1px;
+  height: 15px;
+  background-color: #ccc;
+  top: 0;
+  left: -13px;
+}
+.visual .main .contents .recommend__text-sub li:first-child::after {
+  display: none;
+}
+
 .contents .recomend__box .recomend__list img {
   width: 100%;
 }

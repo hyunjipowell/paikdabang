@@ -108,6 +108,59 @@ header {
   }
 }
 
+.visual {
+  .main {
+    #mainBanner {
+      .carousel-indicators {
+        li {
+          border: 2px solid $white;
+          background-color: unset;
+          border-radius: 50%;
+          background-clip: unset;
+          width: 10px;
+          height: 10px;
+          margin-right: 10px;
+          opacity: 0.8;
+        }
+        .active {
+          background-color: $white;
+          opacity: 1;
+        }
+      }
+    }
+    .contents {
+      .recommend__text-sub {
+        li {
+          position: relative;
+          margin-left: 15px;
+          a {
+            color: #ccc;
+          }
+          &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 1px;
+            height: 15px;
+            background-color: #ccc;
+            top: 0;
+            left: -13px;
+          }
+          &:first-child::after {
+            display: none;
+          }
+        }
+        //   .active {
+        //       color: #0e347e;
+        //     font-weight: 700;
+        //   }
+      }
+    }
+  }
+}
+
+
+
 // container
 .contents {
   .recomend__box{
