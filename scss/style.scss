@@ -157,12 +157,34 @@ header {
       }
     }
   }
-}
-
-
-
-// container
+  // container
 .contents {
+  .recommend__text-sub {
+    li {
+      position: relative;
+      margin-left: 15px;
+      a {
+        color: #ccc;
+      }
+      &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 1px;
+        height: 15px;
+        background-color: #ccc;
+        top: 0;
+        left: -13px;
+      }
+      &:first-child::after {
+        display: none;
+      }
+    }
+    //   .active {
+    //       color: #0e347e;
+    //     font-weight: 700;
+    //   }
+  }
   .recomend__box{
     .recomend__list{
 
@@ -274,6 +296,11 @@ header {
     }
   }
 }
+}
+
+
+
+
 
 footer{
   color: $white;
