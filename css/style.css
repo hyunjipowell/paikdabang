@@ -114,14 +114,17 @@ i {
 header {
   border-top: 5px solid #0e347e;
 }
-header .logo a img {
+header .head {
+  padding: 20px 0 50px;
+}
+header .head .logo a img {
   width: 194px;
 }
-header .head__gnb li a {
+header .head .head__gnb li a {
   font-size: 13px;
   color: #808080;
 }
-header .head__gnb:after {
+header .head .head__gnb:after {
   content: "";
   width: 2px;
   height: 2px;
@@ -134,11 +137,38 @@ header nav .head__menu {
   font-size: 17px;
   font-weight: bold;
 }
-header nav .head__menu .head__menu-sub {
+header nav .head__menu .nav-item {
+  position: relative;
+  padding: 15px 0;
+  width: 133px;
+}
+header nav .head__menu .nav-item .head__menu-sub {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  left: 0;
+  margin-top: 25px;
   display: none;
 }
-header nav .head__menu .head__menu-sub li a {
+header nav .head__menu .nav-item .head__menu-sub li {
+  line-height: 40px;
+}
+header nav .head__menu .nav-item .head__menu-sub li:hover a {
+  color: #0e347e;
+  font-weight: 700;
+}
+header nav .head__menu .nav-item .head__menu-sub li a {
   color: #9a9a9a;
+}
+header nav .sub-js {
+  width: 100%;
+  height: 233px;
+  background: #fff;
+  position: absolute;
+  top: 203px;
+  z-index: 1;
+  left: 0;
+  display: none;
 }
 
 .visual .main #mainBanner .carousel-indicators li {
@@ -161,6 +191,10 @@ header nav .head__menu .head__menu-sub li a {
 }
 .visual .main .contents .recommend__text-sub li a {
   color: #ccc;
+}
+.visual .main .contents .recommend__text-sub li a.active {
+  color: #0e347e;
+  font-weight: 700;
 }
 .visual .main .contents .recommend__text-sub li:after {
   content: "";
