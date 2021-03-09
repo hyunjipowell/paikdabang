@@ -103,7 +103,9 @@ header {
         padding: 15px 0;
         width: 133px;
         // background-color: red;
-
+        @include media($pc-small) {
+          width: 95px;
+        }
         .head__menu-sub {
           position: absolute;
           z-index: 2;
@@ -158,21 +160,23 @@ header {
           opacity: 1;
           width: 45px;
           border-radius: 10px;
-          transition: .4s;
+          transition: 0.4s;
         }
       }
     }
-    .contents {
+  }
+  .contents {
+    .recommend__text {
       .recommend__text-sub {
         li {
           position: relative;
           margin-left: 15px;
           a {
             color: #ccc;
-            &.active{
-              color: #0e347e;
-              font-weight: 700;
-            }
+          }
+          &.active {
+            color: #0e347e;
+            font-weight: 700;
           }
           &:after {
             content: "";
@@ -188,52 +192,29 @@ header {
             display: none;
           }
         }
-       
       }
     }
-  }
-  // container
-  .contents {
-    .recommend__text-sub {
-      li {
-        position: relative;
-        margin-left: 15px;
-        a {
-          color: #ccc;
-        }
-        &:after {
-          content: "";
-          display: block;
-          position: absolute;
-          width: 1px;
-          height: 15px;
-          background-color: #ccc;
-          top: 0;
-          left: -13px;
-        }
-        &:first-child::after {
-          display: none;
-        }
-      }
-      //   .active {
-      //       color: #0e347e;
-      //     font-weight: 700;
-      //   }
-    }
+   //ul html 이름주고 div아래에다가 마크업하기  
     .recomend__box {
-      .recomend__list {
+      >div{
+        width: 100%;
+        position: absolute;
+      }
         img {
           width: 100%;
         }
 
         .card {
           border: unset;
+
         }
       }
-    }
+
+    
 
     .drink {
       height: 550px;
+      margin-top: 60px;
       .drink__box {
         width: 50%;
         background-color: skyblue;
@@ -247,6 +228,7 @@ header {
         @include drink(#ffae00, #f1ae1d);
       }
     }
+
     .coffee {
       position: relative;
       height: 500px;
@@ -260,6 +242,7 @@ header {
         @include drink(#503214, #6b4d30);
       }
     }
+
     .info {
       .info__store {
         @extend %info;
@@ -295,6 +278,7 @@ header {
         background-size: 294px 210px;
       }
     }
+
     .sns {
       padding: 50px 0;
       .sns__box {
@@ -356,7 +340,7 @@ footer {
       height: 40px;
       position: relative;
       padding: 10px;
-      margin-top: 20px;
+      margin-top: 25px;
 
       li {
         a {

@@ -142,6 +142,11 @@ header nav .head__menu .nav-item {
   padding: 15px 0;
   width: 133px;
 }
+@media screen and (max-width: 1200px) {
+  header nav .head__menu .nav-item {
+    width: 95px;
+  }
+}
 header nav .head__menu .nav-item .head__menu-sub {
   position: absolute;
   z-index: 2;
@@ -188,18 +193,18 @@ header nav .sub-js {
   border-radius: 10px;
   transition: 0.4s;
 }
-.visual .main .contents .recommend__text-sub li {
+.visual .contents .recommend__text .recommend__text-sub li {
   position: relative;
   margin-left: 15px;
 }
-.visual .main .contents .recommend__text-sub li a {
+.visual .contents .recommend__text .recommend__text-sub li a {
   color: #ccc;
 }
-.visual .main .contents .recommend__text-sub li a.active {
+.visual .contents .recommend__text .recommend__text-sub li.active {
   color: #0e347e;
   font-weight: 700;
 }
-.visual .main .contents .recommend__text-sub li:after {
+.visual .contents .recommend__text .recommend__text-sub li:after {
   content: "";
   display: block;
   position: absolute;
@@ -209,37 +214,22 @@ header nav .sub-js {
   top: 0;
   left: -13px;
 }
-.visual .main .contents .recommend__text-sub li:first-child::after {
+.visual .contents .recommend__text .recommend__text-sub li:first-child::after {
   display: none;
 }
-.visual .contents .recommend__text-sub li {
-  position: relative;
-  margin-left: 15px;
-}
-.visual .contents .recommend__text-sub li a {
-  color: #ccc;
-}
-.visual .contents .recommend__text-sub li:after {
-  content: "";
-  display: block;
+.visual .contents .recomend__box > div {
+  width: 100%;
   position: absolute;
-  width: 1px;
-  height: 15px;
-  background-color: #ccc;
-  top: 0;
-  left: -13px;
 }
-.visual .contents .recommend__text-sub li:first-child::after {
-  display: none;
-}
-.visual .contents .recomend__box .recomend__list img {
+.visual .contents .recomend__box img {
   width: 100%;
 }
-.visual .contents .recomend__box .recomend__list .card {
+.visual .contents .recomend__box .card {
   border: unset;
 }
 .visual .contents .drink {
   height: 550px;
+  margin-top: 60px;
 }
 .visual .contents .drink .drink__box {
   width: 50%;
@@ -401,7 +391,7 @@ footer .foot__box .foot__family {
   height: 40px;
   position: relative;
   padding: 10px;
-  margin-top: 20px;
+  margin-top: 25px;
 }
 footer .foot__box .foot__family li a {
   color: #fff;
