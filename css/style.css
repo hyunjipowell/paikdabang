@@ -172,7 +172,7 @@ header nav .sub-js {
 }
 
 .visual .main #mainBanner .carousel-indicators li {
-  border: 2px solid #fff;
+  border: 1px solid #fff;
   background-color: unset;
   border-radius: 50%;
   background-clip: unset;
@@ -184,6 +184,9 @@ header nav .sub-js {
 .visual .main #mainBanner .carousel-indicators .active {
   background-color: #fff;
   opacity: 1;
+  width: 45px;
+  border-radius: 10px;
+  transition: 0.4s;
 }
 .visual .main .contents .recommend__text-sub li {
   position: relative;

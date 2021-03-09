@@ -144,7 +144,7 @@ header {
     #mainBanner {
       .carousel-indicators {
         li {
-          border: 2px solid $white;
+          border: 1px solid $white;
           background-color: unset;
           border-radius: 50%;
           background-clip: unset;
@@ -156,6 +156,9 @@ header {
         .active {
           background-color: $white;
           opacity: 1;
+          width: 45px;
+          border-radius: 10px;
+          transition: .4s;
         }
       }
     }
