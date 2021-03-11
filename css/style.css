@@ -100,7 +100,7 @@ i {
 .visual .contents .info .info__store div {
   padding: 50px 0 0 30px;
 }
-.visual .contents .info .info__store div h3 {
+.visual .contents .info .info__store div h3 a {
   font-size: 40px;
   font-weight: 700;
   font-family: "Montserrat", sans-serif;
@@ -193,18 +193,23 @@ header nav .sub-js {
   border-radius: 10px;
   transition: 0.4s;
 }
-.visual .contents .recommend__text .recommend__text-sub li {
+.visual .contents .recommend {
+  position: relative;
+  background: lightgoldenrodyellow;
+}
+.visual .contents .recommend .recommend__text .recommend__text-sub li {
   position: relative;
   margin-left: 15px;
 }
-.visual .contents .recommend__text .recommend__text-sub li a {
+.visual .contents .recommend .recommend__text .recommend__text-sub li a {
   color: #ccc;
 }
-.visual .contents .recommend__text .recommend__text-sub li.active {
+.visual .contents .recommend .recommend__text .recommend__text-sub li.active > a {
   color: #0e347e;
   font-weight: 700;
+  font-family: "Montserrat";
 }
-.visual .contents .recommend__text .recommend__text-sub li:after {
+.visual .contents .recommend .recommend__text .recommend__text-sub li:after {
   content: "";
   display: block;
   position: absolute;
@@ -214,18 +219,49 @@ header nav .sub-js {
   top: 0;
   left: -13px;
 }
-.visual .contents .recommend__text .recommend__text-sub li:first-child::after {
+.visual .contents .recommend .recommend__text .recommend__text-sub li:first-child::after {
   display: none;
 }
-.visual .contents .recomend__box > div {
+.visual .contents .recommend .recomend__box {
+  height: 500px;
+}
+.visual .contents .recommend .recomend__box > div {
   width: 100%;
   position: absolute;
+  display: none;
 }
-.visual .contents .recomend__box img {
+.visual .contents .recommend .recomend__box > div.list1 {
+  display: block;
+}
+.visual .contents .recommend .recomend__box > div .menu {
+  width: 200%;
+}
+.visual .contents .recommend .recomend__box > div .menu li {
+  width: 14.2857142857%;
+  float: left;
+  text-align: center;
+  padding: 15px;
+  box-sizing: border-box;
+}
+.visual .contents .recommend .recomend__box > div .menu li img {
   width: 100%;
 }
-.visual .contents .recomend__box .card {
-  border: unset;
+.visual .contents .recommend .recomend__box > div .menu li h3 {
+  font-size: 17px;
+  font-family: "Montserrat";
+  word-break: keep-all;
+}
+.visual .contents .recommend .recomend__box > div .menuBtn {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+}
+.visual .contents .recommend .recomend__box > div .menuBtn .leftBtn {
+  float: left;
+}
+.visual .contents .recommend .recomend__box > div .menuBtn .rightBtn {
+  float: right;
+  transform: translate(-100%);
 }
 .visual .contents .drink {
   height: 550px;

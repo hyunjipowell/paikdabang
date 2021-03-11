@@ -49,12 +49,14 @@ $mini: 370px;
   div {
     padding: 50px 0 0 30px;
     h3 {
+      a{
       font: {
         size: 40px;
         weight: 700;
         family: "Montserrat", sans-serif;
       }
       color: $sub-color;
+    }
     }
     p {
       font-size: 17px;
@@ -166,6 +168,10 @@ header {
     }
   }
   .contents {
+    .recommend{
+      position: relative;
+      background: lightgoldenrodyellow;
+      // overflow: hidden;
     .recommend__text {
       .recommend__text-sub {
         li {
@@ -174,9 +180,10 @@ header {
           a {
             color: #ccc;
           }
-          &.active {
-            color: #0e347e;
+          &.active>a {
+            color: $sub-color;
             font-weight: 700;
+            font-family: 'Montserrat';
           }
           &:after {
             content: "";
@@ -194,23 +201,51 @@ header {
         }
       }
     }
-   //ul html 이름주고 div아래에다가 마크업하기  
+
     .recomend__box {
-      >div{
+      height: 500px;
+      > div {
         width: 100%;
         position: absolute;
-      }
-        img {
+        display: none;
+        &.list1 {
+          display: block;
+        }
+        .menu {
+          width: 200%;
+          li {
+            width: (100%/7);
+            float: left;
+            text-align: center;
+            padding:15px;
+            box-sizing: border-box;
+            // position: relative;
+            img {
+              width: 100%;
+            }
+            h3 {
+              font-size: 17px;
+              font-family: "Montserrat";
+              word-break: keep-all;
+            }
+          }
+        }
+
+        .menuBtn {
+          position: absolute;
           width: 100%;
-        }
-
-        .card {
-          border: unset;
-
+          top: 50%;
+          .leftBtn{
+            float: left;
+          }
+          .rightBtn{
+            float: right;
+            transform: translate(-100%);
+          }
         }
       }
-
-    
+    }
+  }
 
     .drink {
       height: 550px;

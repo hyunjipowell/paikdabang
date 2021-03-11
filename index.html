@@ -1,379 +1,413 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>빽다방</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/51b3e01251.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="js/jquery-3.5.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-  </head>
 
-  <body>
-    <!-- header -->
-    <header>
-      <div class="container pt-3">
-        <div class="row justify-content-center position-relative head">
-          <h1 class="logo text-start text-md-center">
-            <a href="#"><img src="images/logo.png" alt="" /></a>
-          </h1>
-          <div
-            class="head__gnb position-absolute end-0 w-auto d-none d-md-block"
-          >
-            <ul class="pt-4">
-              <li class="list-inline-item"><a href="#">더본코리아</a></li>
-              <li class="list-inline-item ms-2"><a href="#">매장찾기</a></li>
-            </ul>
-          </div>
-        </div>
-        <nav class="d-none d-md-block">
-          <ul class="head__menu nav justify-content-around text-center">
-            <li class="nav-item">
-              <a href="#">빽다방</a>
-              <ul class="head__menu-sub">
-                <li><a href="#">CEO 인사말</a></li>
-                <li><a href="#">빽다방 소개</a></li>
-                <li><a href="#">커피이야기</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a href="#">메뉴</a>
-              <ul class="head__menu-sub ">
-                <li><a href="#">신메뉴</a></li>
-                <li><a href="#">커피</a></li>
-                <li><a href="#">음료</a></li>
-                <li><a href="#">아이스크림/디저트</a></li>
-                <li><a href="#">빽스치노</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a href="#">소식</a>
-              <ul class="head__menu-sub ">
-                <li><a href="#">소식</a></li>
-                <li><a href="#">이벤트</a></li>
-                <li><a href="#">친절 우수매장</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a href="#">커뮤니티</a>
-              <ul class="head__menu-sub ">
-                <li><a href="#">커피 클래스</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a href="#">매장안내</a>
-              <ul class="head__menu-sub ">
-                <li><a href="#">매장찾기</a></li>
-              </ul>
-            </li>
-            <li class="nav-item"><a href="#">고객의소리</a></li>
-            <li class="nav-item"><a href="#">창업안내</a></li>
-          </ul>
-          <div class="sub-js"></div>
-        </nav>
-      </div>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>빽다방</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/51b3e01251.js" crossorigin="anonymous"></script>
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</head>
 
-    <!-- container -->
-    <div class="visual container-fluid p-0">
-      <div class="main">
-        <div class="carousel slide" id="mainBanner" data-bs-ride="carousel">
-          <ul class="carousel-indicators mb-3">
-            <li
-              data-bs-target="#mainBanner"
-              data-bs-slide-to="0"
-              class="active"
-            ></li>
-            <li data-bs-target="#mainBanner" data-bs-slide-to="1"></li>
-            <li data-bs-target="#mainBanner" data-bs-slide-to="2"></li>
-            <li data-bs-target="#mainBanner" data-bs-slide-to="3"></li>
-            <li data-bs-target="#mainBanner" data-bs-slide-to="4"></li>
-          </ul>
-          <ul class="carousel-inner">
-            <li class="carousel-item active">
-              <a href="#"
-                ><img src="images/banner_1.jpg" alt="" class="w-100"
-              /></a>
-            </li>
-            <li class="carousel-item">
-              <a href="#"
-                ><img src="images/banner_2.jpg" alt="" class="img-fluid"
-              /></a>
-            </li>
-            <li class="carousel-item">
-              <a href="#"
-                ><img src="images/banner_3.jpg" alt="" class="img-fluid"
-              /></a>
-            </li>
-            <li class="carousel-item">
-              <a href="#"
-                ><img src="images/banner_4.jpg" alt="" class="img-fluid"
-              /></a>
-            </li>
-            <li class="carousel-item">
-              <a href="#"
-                ><img src="images/banner_5.jpg" alt="" class="img-fluid"
-              /></a>
-            </li>
-          </ul>
-
-          <ul class="list-unstyled">
-            <li><a href="#mainBanner" class="carousel-control-prev" data-bs-slide="prev"><img src="images/left.svg" alt=""></a></li>
-            <li><a href="#mainBanner" class="carousel-control-next" data-bs-slide="next"><p><img src="images/right.svg" alt=""></p></a></li>
+<body>
+  <!-- header -->
+  <header>
+    <div class="container pt-3">
+      <div class="row justify-content-center position-relative head">
+        <h1 class="logo text-start text-md-center">
+          <a href="#"><img src="images/logo.png" alt="" /></a>
+        </h1>
+        <div class="head__gnb position-absolute end-0 w-auto d-none d-md-block">
+          <ul class="pt-4">
+            <li class="list-inline-item"><a href="#">더본코리아</a></li>
+            <li class="list-inline-item ms-2"><a href="#">매장찾기</a></li>
           </ul>
         </div>
       </div>
-      <div class="contents">
-        <section class="recommend ">
-          <h2 class="blind">추천메뉴</h2>
-          <div class="recommend__text mt-5">
-            <h3 class="recommend__text-title h2 text-center">추천메뉴</h3>
-            <ul class="recommend__text-sub text-end">
-              <li class="list-inline-item"><a href="#">커피</a></li>
-              <li class="list-inline-item"><a href="#">음료</a></li>
-              <li class="list-inline-item">
-                <a href="#">아이스크림/디저트</a>
-              </li>
-              <li class="list-inline-item"><a href="#">빽스치노</a></li>
+      <nav class="d-none d-md-block">
+        <ul class="head__menu nav justify-content-around text-center">
+          <li class="nav-item">
+            <a href="#">빽다방</a>
+            <ul class="head__menu-sub">
+              <li><a href="#">CEO 인사말</a></li>
+              <li><a href="#">빽다방 소개</a></li>
+              <li><a href="#">커피이야기</a></li>
             </ul>
-          </div>
-          <div class="recomend__box text-center">
-            <div class="recomend__list list1 card-group">
-              <ul>
-              <li class="card">
-                <a href="#"><img src="images/list1_1.jpg" alt="" /></a>
-                <p class="card-body"><a href="#">앗!메리카노</a></p>
-              </li>
-              <li class="card">
-                <a href="#"><img src="images/list1_2.jpg" alt="" /></a>
-                <p class="card-body"><a href="#">원조커피</a></p>
-              </li>
-              <li class="card">
-                <a href="#"><img src="images/list1_3.jpg" alt="" /></a>
-                <p class="card-body"><a href="#">달달연유라떼</a></p>
-              </li>
-              <li class="card">
-                <a href="#"><img src="images/list1_4.jpg" alt="" /></a>
-                <p class="card-body"><a href="#">크리미모카라떼</a></p>
-              </li>
-              <li class="card">
-                <a href="#"><img src="images/list1_5.jpg" alt="" /></a>
-                <p class="card-body"><a href="#">카페모카</a></p>
-              </li>
+          </li>
+          <li class="nav-item">
+            <a href="#">메뉴</a>
+            <ul class="head__menu-sub ">
+              <li><a href="#">신메뉴</a></li>
+              <li><a href="#">커피</a></li>
+              <li><a href="#">음료</a></li>
+              <li><a href="#">아이스크림/디저트</a></li>
+              <li><a href="#">빽스치노</a></li>
             </ul>
-            </div>
-         
-          <div class="recomend__list list2 card-group">
-            <ul>
-            <li class="card">
-              <a href="#"><img src="images/list2_1.jpg" alt="" /></a>
-              <p><a href="#">딸기라떼</a></p>
+          </li>
+          <li class="nav-item">
+            <a href="#">소식</a>
+            <ul class="head__menu-sub ">
+              <li><a href="#">소식</a></li>
+              <li><a href="#">이벤트</a></li>
+              <li><a href="#">친절 우수매장</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#">커뮤니티</a>
+            <ul class="head__menu-sub ">
+              <li><a href="#">커피 클래스</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#">매장안내</a>
+            <ul class="head__menu-sub ">
+              <li><a href="#">매장찾기</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="#">고객의소리</a></li>
+          <li class="nav-item"><a href="#">창업안내</a></li>
+        </ul>
+        <div class="sub-js"></div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- container -->
+  <div class="visual container-fluid p-0">
+    <div class="main">
+      <div class="carousel slide" id="mainBanner" data-bs-ride="carousel">
+        <ul class="carousel-indicators mb-3">
+          <li data-bs-target="#mainBanner" data-bs-slide-to="0" class="active"></li>
+          <li data-bs-target="#mainBanner" data-bs-slide-to="1"></li>
+          <li data-bs-target="#mainBanner" data-bs-slide-to="2"></li>
+          <li data-bs-target="#mainBanner" data-bs-slide-to="3"></li>
+          <li data-bs-target="#mainBanner" data-bs-slide-to="4"></li>
+        </ul>
+        <ul class="carousel-inner">
+          <li class="carousel-item active">
+            <a href="#"><img src="images/banner_1.jpg" alt="" class="w-100" /></a>
+          </li>
+          <li class="carousel-item">
+            <a href="#"><img src="images/banner_2.jpg" alt="" class="img-fluid" /></a>
+          </li>
+          <li class="carousel-item">
+            <a href="#"><img src="images/banner_3.jpg" alt="" class="img-fluid" /></a>
+          </li>
+          <li class="carousel-item">
+            <a href="#"><img src="images/banner_4.jpg" alt="" class="img-fluid" /></a>
+          </li>
+          <li class="carousel-item">
+            <a href="#"><img src="images/banner_5.jpg" alt="" class="img-fluid" /></a>
+          </li>
+        </ul>
+
+        <ul class="list-unstyled">
+          <li><a href="#mainBanner" class="carousel-control-prev" data-bs-slide="prev"><img src="images/left.svg"
+                alt=""></a></li>
+          <li><a href="#mainBanner" class="carousel-control-next" data-bs-slide="next">
+              <p><img src="images/right.svg" alt=""></p>
+            </a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="contents">
+      <section class="recommend container">
+        <h2 class="blind">추천메뉴</h2>
+        <div class="recommend__text mt-5">
+          <h3 class="recommend__text-title h2 text-center">추천메뉴</h3>
+          <ul class="recommend__text-sub text-end">
+            <li class="list-inline-item active"><a href="#">커피</a></li>
+            <li class="list-inline-item"><a href="#">음료</a></li>
+            <li class="list-inline-item">
+              <a href="#">아이스크림/디저트</a>
             </li>
-            <li class="card">
-              <a href="#"><img src="images/list2_2.jpg" alt="" /></a>
-              <p><a href="#">딸기에이드</a></p>
-            </li>
-            <li class="card">
-              <a href="#"><img src="images/list2_3.jpg" alt="" /></a>
-              <p><a href="#">레드불꽃파워</a></p>
-            </li>
-            <li class="card">
-              <a href="#"><img src="images/list2_4.jpg" alt="" /></a>
-              <p><a href="#">몽땅딸기파르페</a></p>
-            </li>
-            <li class="card">
-              <a href="#"><img src="images/list2_5.jpg" alt="" /></a>
-              <p><a href="#">몽땅쉐이크(모카)</a></p>
-            </li>
+            <li class="list-inline-item"><a href="#">빽스치노</a></li>
           </ul>
-          </div>
-          <div class="recomend__list list3 card-group">
-            <ul>
-            <li class="card">
-              <a href="#"><img src="images/list3_1.jpg" alt="" /></a>
-              <p><a href="#">노말한소프트</a></p>
-            </li>
-            <li class="card">
-              <a href="#"><img src="images/list3_2.jpg" alt="" /></a>
-              <p><a href="#">달고나크런치</a></p>
-            </li>
-            <li class="card">
-              <a href="#"><img src="images/list3_3.jpg" alt="" /></a>
-              <p><a href="#">사라다빵</a></p>
-            </li>
-            <li class="card">
-              <a href="#"><img src="images/list3_4.jpg" alt="" /></a>
-              <p><a href="#">소세지빵</a></p>
-            </li>
-            <li class="card">
-              <a href="#"><img src="images/list3_5.jpg" alt="" /></a>
-              <p><a href="#">크리미단팥빵</a></p>
-            </li>
-            <li class="card">
-              <a href="#"><img src="images/list3_6.jpg" alt="" /></a>
-              <p><a href="#">크리미슈</a></p>
-            </li>
-            <li class="card">
-              <a href="#"><img src="images/list3_7.jpg" alt="" /></a>
-              <p><a href="#">긴페스츄리와플</a></p>
-            </li>
-          </ul>
-          </div>
-          <div class="recomend__list list4 card-group">
-            <ul>
-            <li class="card">
-              <a href="#"><img src="images/list4_1.jpg" alt="" /></a>
-              <p><a href="#">피스타치오 빽스치노(BASIC)</a></p>
-            </li>
-            <li class="card">
-              <a href="#"><img src="images/list4_2.jpg" alt="" /></a>
-              <p><a href="#">쿠키크런치 빽스치노(SOFT)</a></p>
-            </li>
-            <li class="card">
-              <a href="#"><img src="images/list4_3.jpg" alt="" /></a>
-              <p><a href="#">완전초코 빽스치노(SOFT)</a></p>
-            </li>
-            <li class="card">
-              <a href="#"><img src="images/list4_4.jpg" alt="" /></a>
-              <p><a href="#">완전딸기 빽스치노(SOFT)</a></p>
-            </li>
-            <li class="card">
-              <a href="#"><img src="images/list4_5.jpg" alt="" /></a>
-              <p><a href="#">녹차 빽스치노(SOFT)</a></p>
-            </li>
-            <li class="card">
-              <a href="#"><img src="images/list4_6.jpg" alt="" /></a>
-              <p><a href="#">완전초코바나나 빽스치노(SOFT)</a></p>
-            </li>
-            <li class="card">
-              <a href="#"><img src="images/list4_7.jpg" alt="" /></a>
-              <p><a href="#">피스타치오 빽스치노(SOFT)</a></p>
-            </ul>
-            </div>
-          </div>
         </div>
-        </section>
-        <section class="drink d-flex">
-          <h2 class="blind">VARIOUS BEVERAGE, TASTY ICE CREAM / DESSERT</h2>
-          <div class="drink__box drink1">
+        <div class="recomend__box text-center">
+          <div class="recomend__list list1">
+            <ul class="menu">
+              <li>
+                <a href="#void">
+                  <img src="images/list1_1.jpg" alt="">
+                  <h3>앗!메리카노</h3>
+                </a>
+              </li>
+              <li>
+                <a href="#void">
+                  <img src="images/list1_2.jpg" alt="">
+                  <h3>원조커피</h3>
+                </a>
+              </li>
+              <li>
+                <a href="#void">
+                  <img src="images/list1_3.jpg" alt="">
+                  <h3>달달연유라떼</h3>
+                </a>
+              </li>
+              <li>
+                <a href="#void">
+                  <img src="images/list1_4.jpg" alt="">
+                  <h3>크리미모카라떼</h3>
+                </a>
+              </li>
+              <li>
+                <a href="#void">
+                  <img src="images/list1_5.jpg" alt="">
+                  <h3>카페모카</h3>
+                </a>
+              </li>
+            </ul>
+            <ul class="menuBtn">
+              <li class="leftBtn"><a href="#void">left</a></li>
+              <li class="rightBtn"><a href="#void">right</a></li>
+            </ul>
+          </div>
+          <div class="recomend__list list2">
+            <ul class="menu">
+              <li>
+                <a href="#">
+                  <img src="images/list2_1.jpg" alt="">
+                  <h3>딸기라떼</h3>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="images/list2_2.jpg" alt="">
+                  <h3>딸기에이드</h3>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="images/list2_3.jpg" alt="">
+                  <h3>레드불꽃파워</h3>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="images/list2_4.jpg" alt="">
+                  <h3>몽땅딸기파르페</h3>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="images/list2_5.jpg" alt="">
+                  <h3>몽땅쉐이크&#40;모카&#41;</h3>
+                </a>
+              </li>
+            </ul>
+            <ul class="menuBtn">
+              <li class="leftBtn"><a href="#">left</a></li>
+              <li class="rightBtn"><a href="#">right</a></li>
+            </ul>
+          </div>
+          <div class="recomend__list list3">
+            <ul class="menu">
+              <li>
+                <a href="#">
+                  <img src="images/list3_1.jpg" alt="">
+                  <h3>노말한소프트</h3>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="images/list3_2.jpg" alt="">
+                  <h3>달고나크런치</h3>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="images/list3_3.jpg" alt="">
+                  <h3>사라다빵</h3>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="images/list3_4.jpg" alt="">
+                  <h3>소세지빵</h3>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="images/list3_5.jpg" alt="">
+                  <h3>크리미단팥빵</h3>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="images/list3_6.jpg" alt="">
+                  <h3>크리미슈</h3>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="images/list3_7.jpg" alt="">
+                  <h3>긴페스츄리와플</h3>
+                </a>
+              </li>
+            </ul>
+            <ul class="menuBtn">
+              <li class="leftBtn"><a href="#">left</a></li>
+              <li class="rightBtn"><a href="#">right</a></li>
+            </ul>
+          </div>
+          <div class="recomend__list list4">
+
+            <ul class="menu">
+              <li>
+                <a href="#">
+                  <img src="images/list4_1.jpg" alt="">
+                  <h3>피스타치오 빽스치노&#40;BASIC&#41;</h3>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="images/list4_2.jpg" alt="">
+                  <h3>쿠키크런치 빽스치노&#40;SOFT&#41;</h3>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="images/list4_3.jpg" alt="">
+                  <h3>완전초코 빽스치노&#40;SOFT&#41;</h3>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="images/list4_4.jpg" alt="">
+                  <h3>완전딸기 빽스치노&#40;SOFT&#41;</h3>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="images/list4_5.jpg" alt="">
+                  <h3>녹차 빽스치노&#40;SOFT&#41;</h3>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="images/list4_6.jpg" alt="">
+                  <h3>완전초코바나나 빽스치노&#40;SOFT&#41;</h3>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="images/list4_7.jpg" alt="">
+                  <h3>피스타치오 빽스치노&#40;SOFT&#41;</h3>
+                </a>
+              </li>
+             
+            </ul>
+            <ul class="menuBtn">
+              <li class="leftBtn"><a href="#">left</a></li>
+              <li class="rightBtn"><a href="#">right</a></li>
+            </ul>
+          </div>
+
+
+      </section>
+      <section class="drink d-flex">
+        <h2 class="blind">VARIOUS BEVERAGE, TASTY ICE CREAM &#47; DESSERT</h2>
+        <div class="drink__box drink1">
           <div class="drink__box-text">
             <h3><a href="#">VARIOUS<br>BEVERAGE</a></h3>
-            <span
-              ><a href="#"
-                >에이드, 티, 주스 등 취향대로 골라 먹는 즐거움!</a
-              ></span
-            >
+            <span><a href="#">에이드, 티, 주스 등 취향대로 골라 먹는 즐거움!</a></span>
           </div>
         </div>
-          <div class="drink__box drink2">
-            <div class="drink__box-text">
-              <h3><a href="#">SWEET<br>PAIK'S CCINO</a></h3>
-              <span
-                ><a href="#">달콤 시원한 빽다방 시그니처 메뉴!</a></span
-              >
-            </div>
+        <div class="drink__box drink2">
+          <div class="drink__box-text">
+            <h3><a href="#">SWEET<br>PAIK'S CCINO</a></h3>
+            <span><a href="#">달콤 시원한 빽다방 시그니처 메뉴!</a></span>
           </div>
-        </section>
-        <section class="coffee text-center">
-          <h2 class="blind">FRESH COFFEE</h2>
-          <div class="coffee__box">
-            <div class="coffee__box-text">
-              <h3><a href="#">FRESH COFFEE</a></h3>
-              <span
-                ><a href="#"
-                  >신선한 뉴크롭 원두를 사용하여 추출한 커피메뉴!</a
-                ></span
-              >
-            </div>
+        </div>
+      </section>
+      <section class="coffee text-center">
+        <h2 class="blind">FRESH COFFEE</h2>
+        <div class="coffee__box">
+          <div class="coffee__box-text">
+            <h3><a href="#">FRESH COFFEE</a></h3>
+            <span><a href="#">신선한 뉴크롭 원두를 사용하여 추출한 커피메뉴!</a></span>
           </div>
-        </section>
-  
-        <section class="info container">
-          <h2 class="blind">매장찾기, 창업안내</h2>
-  <div class="row">
+        </div>
+      </section>
 
-    <div class="info__store col-6">
-      <div class="info__box">
-        <h3 class="h2">STORE</h3>
-        <p>원하시는 지역의 매장을 검색해 보세요!</p>
-        <form class="store-search">
-          <input type="search" placeholder="Find a store in your area"/>
-          <p>
-            <img src="images/search-white.svg" alt="" />
-          </p>
-        </form>
-      </div>
+      <section class="info container">
+        <h2 class="blind">매장찾기, 창업안내</h2>
+        <div class="row">
+
+          <div class="info__store col-6">
+            <div class="info__box">
+              <h3 class="h2"><a href="#">STORE</a></h3>
+              <p>원하시는 지역의 매장을 검색해 보세요!</p>
+              <form class="store-search">
+                <input type="search" placeholder="Find a store in your area" />
+                <p>
+                  <img src="images/search-white.svg" alt="" />
+                </p>
+              </form>
+            </div>
+          </div>
+          <div class="info__store col-6 info-bg">
+            <div class="info__box">
+              <h3 class="h2"><a href="#">FRANCHISE</a></h3>
+              <p>빽다방 창업안내를 도와드리겠습니다.</p>
+            </div>
+            <div class="info-btn"><img src="" alt="" /></div>
+          </div>
+        </div>
+      </section>
+      <section class="sns text-center container">
+        <h2 class="blind">sns</h2>
+
+        <div class="sns__box">
+          <h3 class="h2">PAIK’S COFFEE SNS</h3>
+          <a href="#">#빽다방</a>
+          <a href="#">#빽다방신메뉴</a>
+          <a href="#">#빽다방이벤트</a>
+        </div>
+        <ul class="sns__icon text-center">
+          <li class="list-inline-item">
+            <a href="#"><img src="images/facebook-ico.png" alt="" /></a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#"><img src="images/insta-ico.png" alt="" /></a>
+          </li>
+        </ul>
+
+      </section>
     </div>
-    <div class="info__store col-6 info-bg">
-      <div class="info__box">
-        <h3 class="h2">FRANCHISE</h3>
-        <p>빽다방 창업안내를 도와드리겠습니다.</p>
-      </div>
-      <div class="info-btn"><img src="" alt="" /></div>
-    </div>
+
   </div>
-        </section>
-        <section class="sns text-center container">
-          <h2 class="blind">sns</h2>
-          
-            <div class="sns__box">
-              <h3 class="h2">PAIK’S COFFEE SNS</h3>
-              <a href="#">#빽다방</a>
-              <a href="#">#빽다방신메뉴</a>
-              <a href="#">#빽다방이벤트</a>
-            </div>
-            <ul class="sns__icon text-center">
-              <li class="list-inline-item">
-                <a href="#"><img src="images/facebook-ico.png" alt="" /></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#"><img src="images/insta-ico.png" alt="" /></a>
-              </li>
-            </ul>
-        
-        </section>
-      </div>
-     
-    </div>
 
-    <!-- footer -->
-    <footer>
-      <div class="foot__box">
-        <div class="d-flex justify-content-around">
-          <div class="foot__logo">
-            <a href="#"><img src="images/flogo-2.png" alt="" /></a>
-          </div>
-          <div class="foot__text">
-            <p>(주)더본코리아 사업자등록번호 211-86-00870 <span>대표이사 백종원</span></p>
-            <p>
-              주소: 서울시 강남구 봉은사로 1길 39 유성빌딩 5~6층 <span>팩스:
+  <!-- footer -->
+  <footer>
+    <div class="foot__box">
+      <div class="d-flex justify-content-around">
+        <div class="foot__logo">
+          <a href="#"><img src="images/flogo-2.png" alt="" /></a>
+        </div>
+        <div class="foot__text">
+          <p>&#40;주&#41;더본코리아 사업자등록번호 211-86-00870 <span>대표이사 백종원</span></p>
+          <p>
+            주소: 서울시 강남구 봉은사로 1길 39 유성빌딩 5~6층 <span>팩스:
               02-511-3864</span>
-            </p>
-            <p>
-              본사 대표전화: 02-549-3864 <span>가맹상담전화: 02-3447-0410</span> <span>고객센터:
+          </p>
+          <p>
+            본사 대표전화: 02-549-3864 <span>가맹상담전화: 02-3447-0410</span> <span>고객센터:
               1544-2360</span>
-            </p>
-          </div>
-          <ul class="foot__family  ">
-            <li class="foot__family-btn"><a href="#void">패밀리사이트</a>
-              <ul class="foot__family-sub text-center">
-                <li><a href="#">더본코리아 공식홈페이지</a></li>
+          </p>
+        </div>
+        <ul class="foot__family  ">
+          <li class="foot__family-btn"><a href="#void">패밀리사이트</a>
+            <ul class="foot__family-sub text-center">
+              <li><a href="#">더본코리아 공식홈페이지</a></li>
               <li><a href="#">새마을식당</a></li>
               <li><a href="#">원조쌈밥집</a></li>
               <li><a href="#">홍콩반점</a></li>
@@ -382,18 +416,19 @@
               <li><a href="#">백철판</a></li>
               <li><a href="#">백스비어</a></li>
               <li><a href="#">역전우동</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
+            </ul>
+          </li>
+        </ul>
       </div>
-    </footer>
-    <aside class="d-none">
-      <div class="goTop">
-        <i class="fas fa-caret-up fa-lg"></i>
-        <p>TOP</p>
-      </div>
-    </aside>
-    <script src="js/style.js"></script>
-  </body>
+    </div>
+  </footer>
+  <aside class="d-none">
+    <div class="goTop">
+      <i class="fas fa-caret-up fa-lg"></i>
+      <p>TOP</p>
+    </div>
+  </aside>
+  <script src="js/style.js"></script>
+</body>
+
 </html>
