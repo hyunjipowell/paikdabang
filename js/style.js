@@ -13,51 +13,70 @@ $(function(){
 
       //추천메뉴
       //클릭하면 다른메뉴 보여지도록
-      $(".recommend__text-sub>li").click(function () {
+      $(".recommend__text-sub>li").click(function (e) {
+              e.preventDefault();
+
         var recomNumber = $(this).index();
         $(this).addClass("active").siblings("li").removeClass("active");
         $(".recomend__box>div").eq(recomNumber).css("display", "block").siblings().css("display", "none");
     })
 
+  
+//     var showMenu = 0;
+//     //배너 한개의 너비값
+//   var menuWidth = $(".menu>li").width();
+//   //복사하기 전 배너 개수
+//   var menuCount = $(".menu>li").length;
 
+//   var copyFirst = $(".menu>li:first").clone();
+//   var copyNext = $(".menu>li").eq(1).clone();
 
-    var showMenu = 0;
-  var menuCount = $(".menu>li").length;
-  var copyPhoto = $(".menu>li:first").clone();
-  var copyPhoto1 = $(".menu>li").eq(1).clone();
+//   $(".menu").prepend(copyNext);
+//   $(".menu").append(copyFirst);
 
-  $(".menu").append(copyPhoto);
-  $(".menu").append(copyPhoto1);
+//   var count = $(".menu>li").length;
+//   console.log(`복사후 배너개수 : ${count}`);
+//   $(".recomend__box ").width(count * menuWidth);
+//   $(".menu>li").width(menuWidth);
 
-  var Mcount = $(".menu>li").length;
-  console.log(`복사후 배너개수 : ${Mcount}`);
+//   function move() {
+//     $(".menu").stop().animate({
+//         "margin-left": -showMenu * menuWidth - 300
+//     }, 500);
 
-  $(".recomend__list").width(Mcount * menuCount);
-  $(".menu>li").width(menuCount);
+//     $(".menu>li").eq(showMenu + 1).stop().fadeIn(500);
+// }
+//  $(".rightBtn").click(function () {
+//   move();
+//       });
 
-    $(".recomend__box>div").each(function () {
+  //   $(".recomend__box>div").each(function () {
+  //   //배너가 몇번째 배너인지 보여줄 변수 만들기
 
-    })
-    function moveMenu(){
-        sNum = $(".menu>li").index();
-        s = sNum-2; 
-        if (showMenu === --sNum) {
-            sNum = 0;
-            $(".recomend__list").css("margin-left", 0);
-          }
-          showMenu++;
-          $(".recomend__list")
-            .stop()
-            .animate(
-              {
-                marginLeft: -showMenu * 30 + "%",
-              },
-              1000
-            );
-    }
-    $(".rightBtn").click(function () {
-        moveMenu();
-      });
+  // // $(".recomend__list").width(Mcount * menuCount);
+  // $(".menu>li").width(menuCount);
+
+  //   })
+  //   function moveMenu(){
+  //       sNum = $(".menu>li").index();
+  //      console.log(sNum);
+        // if (showMenu === 4) {
+        //     sNum = 0;
+        //     $(".recomend__list").css("margin-left", 0);
+        //   }
+        //   showMenu++;
+        //   $(".recomend__list")
+        //     .stop()
+        //     .animate(
+        //       {
+        //         marginLeft: -showMenu * 30 + "%",
+        //       },
+        //       1000
+        //     );
+    // }
+    // $(".rightBtn").click(function () {
+    //     moveMenu();
+    //   });
 
 
 

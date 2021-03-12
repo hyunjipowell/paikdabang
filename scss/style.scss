@@ -31,6 +31,9 @@ $mini: 370px;
           family: "Montserrat", sans-serif;
         }
         color: $title;
+        @include media($mobile){
+          font-size: 30px;
+        }
       }
     }
     span {
@@ -40,6 +43,20 @@ $mini: 370px;
         color: $sub-title;
       }
     }
+  }
+}
+
+@mixin menuBtn($float,$left) {
+  float: $float;
+  background-color: #ffe60080;
+  border-radius: 15px;
+  width: 30px;
+  height: 30px;
+  padding-left: $left;
+  padding-top: 2px;
+  &:hover{
+    background-color: $main-color;
+    transition: .8s;
   }
 }
 
@@ -68,13 +85,35 @@ $mini: 370px;
 //   header
 header {
   border-top: 5px solid $sub-color;
+  @include media($mobile) {
+    background:$sub-color;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    border-top: unset;
+  }
   .head {
     padding: 20px 0 50px;
+    @include media($mobile) {
+      padding: unset;
+    }
     .logo {
       a {
-        img {
-          width: 194px;
+        width: 194px;
+        display: inline-block;
+        // img {
+        //   max-width: 100%;
+         
+        // }
+        background:url(../images/logo.png) no-repeat center center;
+        background-size: contain;
+        height: 60px;
+        @include media($mobile) {
+          width: 150px;
+          background: url(../images/logo-2.png) no-repeat center center;
+          background-size: contain;
         }
+          
       }
     }
     .head__gnb {
@@ -92,6 +131,18 @@ header {
         position: absolute;
         top: 32px;
         left: 80px;
+      }
+    }
+    .head__menu-btn{
+      a{
+      display: inline-block;
+      width: 30px;
+      position: absolute;
+      top: 15px;
+      right: 10px;
+      img{
+        width: 100%;
+      }
       }
     }
   }
@@ -165,14 +216,20 @@ header {
           transition: 0.4s;
         }
       }
+      .list-unstyled{
+        @include media($mobile){
+          display: none;
+        }
+      }
     }
   }
   .contents {
     .recommend{
       position: relative;
-      background: lightgoldenrodyellow;
-      // overflow: hidden;
+      // background: lightgoldenrodyellow;
+      overflow: hidden;
     .recommend__text {
+          margin: 50px 0;
       .recommend__text-sub {
         li {
           position: relative;
@@ -219,14 +276,21 @@ header {
             text-align: center;
             padding:15px;
             box-sizing: border-box;
-            // position: relative;
             img {
               width: 100%;
+              transition: .5s;
+            
             }
             h3 {
               font-size: 17px;
               font-family: "Montserrat";
               word-break: keep-all;
+            }
+            &:hover{
+              img{
+                transition: .5s;
+                transform: scale(1.2);
+              }
             }
           }
         }
@@ -235,12 +299,27 @@ header {
           position: absolute;
           width: 100%;
           top: 50%;
+          text-indent: -9999px;
           .leftBtn{
-            float: left;
+            @include menuBtn(left,2px);
+  
+            >a{
+              display: block;
+            background: url(../images/back.svg) no-repeat center center;
+            width: 24px;
+            height: 24px;
+            }
           }
           .rightBtn{
-            float: right;
+            @include menuBtn(right,4px);
+    
             transform: translate(-100%);
+            >a{
+              display: block;
+            background: url(../images/next.svg) no-repeat center center;
+            width: 24px;
+            height: 24px;
+            }
           }
         }
       }
@@ -249,18 +328,26 @@ header {
 
     .drink {
       height: 550px;
-      margin-top: 60px;
+      @include media($mobile){
+        margin-right: unset;
+      }
       .drink__box {
-        width: 50%;
+        // width: 50%;
         background-color: skyblue;
       }
       .drink1 {
         background: url(../images/main_sec3.jpg) no-repeat 100% center;
         @include drink(#5b6327, #798434);
+        // @include media($mobile){
+        //   background: url(../images/mmain_sec3.jpg) no-repeat;
+        // }
       }
       .drink2 {
         background: url(../images/main_sec4.jpg) no-repeat center center;
         @include drink(#ffae00, #f1ae1d);
+        // @include media($mobile){
+        //   background: url(../images/mmain_sec4.jpg) no-repeat 100% center;
+        // }
       }
     }
 
@@ -276,9 +363,16 @@ header {
       .coffee__box {
         @include drink(#503214, #6b4d30);
       }
+      @include media($mobile){
+        background-attachment: unset; 
+        height: 450px;
+      }
     }
 
     .info {
+      @include media($mobile){
+        max-width: unset;
+      }
       .info__store {
         @extend %info;
         .info__box {

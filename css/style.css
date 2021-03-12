@@ -114,11 +114,36 @@ i {
 header {
   border-top: 5px solid #0e347e;
 }
+@media screen and (max-width: 767px) {
+  header {
+    background: #0e347e;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    border-top: unset;
+  }
+}
 header .head {
   padding: 20px 0 50px;
 }
-header .head .logo a img {
+@media screen and (max-width: 767px) {
+  header .head {
+    padding: unset;
+  }
+}
+header .head .logo a {
   width: 194px;
+  display: inline-block;
+  background: url(../images/logo.png) no-repeat center center;
+  background-size: contain;
+  height: 60px;
+}
+@media screen and (max-width: 767px) {
+  header .head .logo a {
+    width: 150px;
+    background: url(../images/logo-2.png) no-repeat center center;
+    background-size: contain;
+  }
 }
 header .head .head__gnb li a {
   font-size: 13px;
@@ -132,6 +157,16 @@ header .head .head__gnb:after {
   position: absolute;
   top: 32px;
   left: 80px;
+}
+header .head .head__menu-btn a {
+  display: inline-block;
+  width: 30px;
+  position: absolute;
+  top: 15px;
+  right: 10px;
+}
+header .head .head__menu-btn a img {
+  width: 100%;
 }
 header nav .head__menu {
   font-size: 17px;
@@ -193,9 +228,17 @@ header nav .sub-js {
   border-radius: 10px;
   transition: 0.4s;
 }
+@media screen and (max-width: 767px) {
+  .visual .main #mainBanner .list-unstyled {
+    display: none;
+  }
+}
 .visual .contents .recommend {
   position: relative;
-  background: lightgoldenrodyellow;
+  overflow: hidden;
+}
+.visual .contents .recommend .recommend__text {
+  margin: 50px 0;
 }
 .visual .contents .recommend .recommend__text .recommend__text-sub li {
   position: relative;
@@ -245,30 +288,71 @@ header nav .sub-js {
 }
 .visual .contents .recommend .recomend__box > div .menu li img {
   width: 100%;
+  transition: 0.5s;
 }
 .visual .contents .recommend .recomend__box > div .menu li h3 {
   font-size: 17px;
   font-family: "Montserrat";
   word-break: keep-all;
 }
+.visual .contents .recommend .recomend__box > div .menu li:hover img {
+  transition: 0.5s;
+  transform: scale(1.2);
+}
 .visual .contents .recommend .recomend__box > div .menuBtn {
   position: absolute;
   width: 100%;
   top: 50%;
+  text-indent: -9999px;
 }
 .visual .contents .recommend .recomend__box > div .menuBtn .leftBtn {
   float: left;
+  background-color: #ffe60080;
+  border-radius: 15px;
+  width: 30px;
+  height: 30px;
+  padding-left: 2px;
+  padding-top: 2px;
+}
+.visual .contents .recommend .recomend__box > div .menuBtn .leftBtn:hover {
+  background-color: #ffe600;
+  transition: 0.8s;
+}
+.visual .contents .recommend .recomend__box > div .menuBtn .leftBtn > a {
+  display: block;
+  background: url(../images/back.svg) no-repeat center center;
+  width: 24px;
+  height: 24px;
 }
 .visual .contents .recommend .recomend__box > div .menuBtn .rightBtn {
   float: right;
+  background-color: #ffe60080;
+  border-radius: 15px;
+  width: 30px;
+  height: 30px;
+  padding-left: 4px;
+  padding-top: 2px;
   transform: translate(-100%);
+}
+.visual .contents .recommend .recomend__box > div .menuBtn .rightBtn:hover {
+  background-color: #ffe600;
+  transition: 0.8s;
+}
+.visual .contents .recommend .recomend__box > div .menuBtn .rightBtn > a {
+  display: block;
+  background: url(../images/next.svg) no-repeat center center;
+  width: 24px;
+  height: 24px;
 }
 .visual .contents .drink {
   height: 550px;
-  margin-top: 60px;
+}
+@media screen and (max-width: 767px) {
+  .visual .contents .drink {
+    margin-right: unset;
+  }
 }
 .visual .contents .drink .drink__box {
-  width: 50%;
   background-color: skyblue;
 }
 .visual .contents .drink .drink1 {
@@ -286,6 +370,11 @@ header nav .sub-js {
   font-weight: 700;
   font-family: "Montserrat", sans-serif;
   color: #5b6327;
+}
+@media screen and (max-width: 767px) {
+  .visual .contents .drink .drink1 div h3 a {
+    font-size: 30px;
+  }
 }
 .visual .contents .drink .drink1 div span a {
   font-size: 17px;
@@ -307,6 +396,11 @@ header nav .sub-js {
   font-weight: 700;
   font-family: "Montserrat", sans-serif;
   color: #ffae00;
+}
+@media screen and (max-width: 767px) {
+  .visual .contents .drink .drink2 div h3 a {
+    font-size: 30px;
+  }
 }
 .visual .contents .drink .drink2 div span a {
   font-size: 17px;
@@ -338,10 +432,26 @@ header nav .sub-js {
   font-family: "Montserrat", sans-serif;
   color: #503214;
 }
+@media screen and (max-width: 767px) {
+  .visual .contents .coffee .coffee__box div h3 a {
+    font-size: 30px;
+  }
+}
 .visual .contents .coffee .coffee__box div span a {
   font-size: 17px;
   font-weight: 700;
   color: #6b4d30;
+}
+@media screen and (max-width: 767px) {
+  .visual .contents .coffee {
+    background-attachment: unset;
+    height: 450px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .visual .contents .info {
+    max-width: unset;
+  }
 }
 .visual .contents .info .info__store .info__box form {
   position: relative;
