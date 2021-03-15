@@ -100,15 +100,27 @@ i {
 .visual .contents .info .info__store div {
   padding: 50px 0 0 30px;
 }
+@media screen and (max-width: 767px) {
+  .visual .contents .info .info__store div {
+    padding: unset;
+    margin-top: 25px;
+  }
+}
 .visual .contents .info .info__store div h3 a {
   font-size: 40px;
   font-weight: 700;
   font-family: "Montserrat", sans-serif;
   color: #0e347e;
 }
+@media screen and (max-width: 767px) {
+  .visual .contents .info .info__store div h3 a {
+    font-size: 25px;
+  }
+}
 .visual .contents .info .info__store div p {
   font-size: 17px;
   font-weight: 700;
+  word-break: keep-all;
 }
 
 header {
@@ -160,13 +172,10 @@ header .head .head__gnb:after {
 }
 header .head .head__menu-btn a {
   display: inline-block;
-  width: 30px;
   position: absolute;
-  top: 15px;
-  right: 10px;
-}
-header .head .head__menu-btn a img {
-  width: 100%;
+  width: 30px;
+  height: 30px;
+  background: url(../images/menu.svg);
 }
 header nav .head__menu {
   font-size: 17px;
@@ -202,15 +211,18 @@ header nav .head__menu .nav-item .head__menu-sub li a {
 }
 header nav .sub-js {
   width: 100%;
-  height: 233px;
+  height: 255px;
   background: #fff;
   position: absolute;
-  top: 203px;
+  top: 230px;
   z-index: 1;
   left: 0;
   display: none;
 }
 
+.visual .main #mainBanner .carousel-indicators {
+  overflow: hidden;
+}
 .visual .main #mainBanner .carousel-indicators li {
   border: 1px solid #fff;
   background-color: unset;
@@ -267,6 +279,11 @@ header nav .sub-js {
 }
 .visual .contents .recommend .recomend__box {
   height: 500px;
+}
+@media screen and (max-width: 767px) {
+  .visual .contents .recommend .recomend__box {
+    height: 300px;
+  }
 }
 .visual .contents .recommend .recomend__box > div {
   width: 100%;
@@ -346,6 +363,8 @@ header nav .sub-js {
 }
 .visual .contents .drink {
   height: 550px;
+  margin-left: unset;
+  margin-right: unset;
 }
 @media screen and (max-width: 767px) {
   .visual .contents .drink {
@@ -362,6 +381,16 @@ header nav .sub-js {
 .visual .contents .drink .drink1 div {
   padding: 60px 0 40px 50px;
 }
+@media screen and (max-width: 767px) {
+  .visual .contents .drink .drink1 div {
+    padding: 30px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .visual .contents .drink .drink1 div {
+    padding: 10px 0;
+  }
+}
 .visual .contents .drink .drink1 div h3 {
   padding-bottom: 15px;
 }
@@ -373,7 +402,7 @@ header nav .sub-js {
 }
 @media screen and (max-width: 767px) {
   .visual .contents .drink .drink1 div h3 a {
-    font-size: 30px;
+    font-size: 25px;
   }
 }
 .visual .contents .drink .drink1 div span a {
@@ -388,6 +417,16 @@ header nav .sub-js {
 .visual .contents .drink .drink2 div {
   padding: 60px 0 40px 50px;
 }
+@media screen and (max-width: 767px) {
+  .visual .contents .drink .drink2 div {
+    padding: 30px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .visual .contents .drink .drink2 div {
+    padding: 10px 0;
+  }
+}
 .visual .contents .drink .drink2 div h3 {
   padding-bottom: 15px;
 }
@@ -399,7 +438,7 @@ header nav .sub-js {
 }
 @media screen and (max-width: 767px) {
   .visual .contents .drink .drink2 div h3 a {
-    font-size: 30px;
+    font-size: 25px;
   }
 }
 .visual .contents .drink .drink2 div span a {
@@ -423,6 +462,16 @@ header nav .sub-js {
 .visual .contents .coffee .coffee__box div {
   padding: 60px 0 40px 50px;
 }
+@media screen and (max-width: 767px) {
+  .visual .contents .coffee .coffee__box div {
+    padding: 30px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .visual .contents .coffee .coffee__box div {
+    padding: 10px 0;
+  }
+}
 .visual .contents .coffee .coffee__box div h3 {
   padding-bottom: 15px;
 }
@@ -434,7 +483,7 @@ header nav .sub-js {
 }
 @media screen and (max-width: 767px) {
   .visual .contents .coffee .coffee__box div h3 a {
-    font-size: 30px;
+    font-size: 25px;
   }
 }
 .visual .contents .coffee .coffee__box div span a {
@@ -445,7 +494,8 @@ header nav .sub-js {
 @media screen and (max-width: 767px) {
   .visual .contents .coffee {
     background-attachment: unset;
-    height: 450px;
+    height: 300px;
+    margin: 30px 0;
   }
 }
 @media screen and (max-width: 767px) {
@@ -462,6 +512,16 @@ header nav .sub-js {
   width: 250px;
   height: 35px;
 }
+@media screen and (max-width: 767px) {
+  .visual .contents .info .info__store .info__box form input[type=search] {
+    width: 185px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .visual .contents .info .info__store .info__box form input[type=search] {
+    width: 99px;
+  }
+}
 .visual .contents .info .info__store .info__box form > p {
   width: 40px;
   height: 35px;
@@ -469,6 +529,16 @@ header nav .sub-js {
   left: 210px;
   background: #0e347e;
   bottom: 0px;
+}
+@media screen and (max-width: 767px) {
+  .visual .contents .info .info__store .info__box form > p {
+    left: 185px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .visual .contents .info .info__store .info__box form > p {
+    left: 99px;
+  }
 }
 .visual .contents .info .info__store .info__box form > p img {
   width: 24px;
@@ -481,8 +551,13 @@ header nav .sub-js {
   background: url(../images/main_sec6.png) no-repeat bottom right;
   background-size: 294px 210px;
 }
+@media screen and (max-width: 767px) {
+  .visual .contents .info .info-bg {
+    background-size: 234px 160px;
+  }
+}
 .visual .contents .sns {
-  padding: 50px 0;
+  padding-top: 50px;
 }
 .visual .contents .sns .sns__box {
   margin: 60px 0;
@@ -515,23 +590,55 @@ footer {
 footer .foot__box {
   padding: 300px 0 40px;
 }
-footer .foot__box .foot__logo img {
+@media screen and (max-width: 1200px) {
+  footer .foot__box {
+    padding: 150px 0 30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  footer .foot__box {
+    padding: 100px 0 30px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  footer .foot__box .footWrap {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+footer .foot__box .footWrap .foot__logo img {
   width: 200px;
   padding-top: 20px;
 }
-footer .foot__box .foot__text {
+footer .foot__box .footWrap .foot__text {
   letter-spacing: 1px;
   text-align: center;
   font-size: 16px;
   font-family: "Montserrat";
 }
-footer .foot__box .foot__text p {
+@media screen and (max-width: 767px) {
+  footer .foot__box .footWrap .foot__text {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 375px) {
+  footer .foot__box .footWrap .foot__text {
+    font-size: 14px;
+  }
+}
+footer .foot__box .footWrap .foot__text p {
   line-height: 1.5;
 }
-footer .foot__box .foot__text p span {
+footer .foot__box .footWrap .foot__text p span {
   padding-left: 10px;
 }
-footer .foot__box .foot__family {
+@media screen and (max-width: 767px) {
+  footer .foot__box .footWrap .foot__text p span {
+    display: block;
+  }
+}
+footer .foot__box .footWrap .foot__family {
   border: 1px solid #fff;
   width: 185px;
   height: 40px;
@@ -539,16 +646,21 @@ footer .foot__box .foot__family {
   padding: 10px;
   margin-top: 25px;
 }
-footer .foot__box .foot__family li a {
+@media screen and (max-width: 1200px) {
+  footer .foot__box .footWrap .foot__family {
+    display: none;
+  }
+}
+footer .foot__box .footWrap .foot__family li a {
   color: #fff;
   font-size: 15px;
 }
-footer .foot__box .foot__family .foot__family-btn {
+footer .foot__box .footWrap .foot__family .foot__family-btn {
   background-image: url(../images/up-arrow.svg);
   background-position: 95% 50%;
   background-repeat: no-repeat;
 }
-footer .foot__box .foot__family .foot__family-sub {
+footer .foot__box .footWrap .foot__family .foot__family-sub {
   display: none;
   position: absolute;
   border: 1px solid;
@@ -556,6 +668,6 @@ footer .foot__box .foot__family .foot__family-sub {
   right: -1px;
   bottom: 38px;
 }
-footer .foot__box .foot__family .foot__family-sub li {
+footer .foot__box .footWrap .foot__family .foot__family-sub li {
   line-height: 2;
 }
